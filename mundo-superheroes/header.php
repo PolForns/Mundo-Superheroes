@@ -9,6 +9,8 @@
 <link rel="profile" href="http://gmpg.org/xfn/11"/>
 <link rel="icon" href="http://www.mundo-superheroes.com/wp-content/uploads/2017/12/yeah.png" type="image/png">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700" rel="stylesheet">
+
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php wp_head(); ?>
 

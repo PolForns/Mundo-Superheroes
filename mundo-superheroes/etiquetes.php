@@ -1,7 +1,7 @@
 <?php
 
 /*
-* Template Name: Categories
+* Template Name: Etiquetes
 * Description: Web Mundo Superheroes
 */
 

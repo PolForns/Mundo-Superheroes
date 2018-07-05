@@ -1,7 +1,7 @@
 <?php
 
 /*
-* Template Name: Producto
+* Template Name: Producte
 * Description: Web Mundo Superheroes
 */
 
@@ -10,7 +10,7 @@ get_header(); ?>
 <div class="container">
 		
 	<header>
-		<img class="logoPetit" src="http://www.mundo-superheroes.com/wp-content/uploads/2017/12/logo-portada.png" alt="Logo Mundo Superhéroes">
+		<a href="http://www.mundo-superheroes.com"><img class="logoPetit" src="http://www.mundo-superheroes.com/wp-content/uploads/2017/12/logo-portada.png" alt="Logo Mundo Superhéroes"></a>
 	</header>
 
 	<?php
