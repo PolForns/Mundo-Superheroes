@@ -1,7 +1,7 @@
 <?php
 
 /*
-* Template Name: Paàgina d'inici
+* Template Name: Pàgina d'inici
 * Description: Web Mundo Superheroes
 */
 
@@ -14,22 +14,12 @@ get_header(); ?>
 	</header>
 
 	<div class="contingutPortada">
-		<div>
-			<h2>Categorias de productos</h2>
-		</div>
-		<div>
-			<h2>Etiquetas</h2>
-		</div>
-		<div>
-			<h2>Destacados</h2>
-		</div>
+		<?php
+			while ( have_posts() ) : the_post();
+				the_content();
+			endwhile;
+		?>
 	</div>
-
-	<?php
-		while ( have_posts() ) : the_post();
-			the_content();
-		endwhile;
-	?>
 
 </div>
 
