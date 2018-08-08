@@ -14,7 +14,9 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-/* * COLORS */
+@import "normalize";
+
+/* COLORS */
 $verd: #629d91;
 $carbassa: #f49542;
 $textos: #1e1e1e;
@@ -47,11 +49,6 @@ $textos: #1e1e1e;
 
 /* GENÈRICS */
 
-* {
-	margin: 0;
-	padding: 0;
-}
-
 header {
 	text-align: center;
 	font-family: Montserrat;
@@ -66,6 +63,7 @@ body {
 	height: 100%;
 	width: 100%;
 	color: $textos;
+	overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -82,30 +80,36 @@ h2 {
 }
 
 p {
-   font-size: 18px;
-   text-align: justify;
+  font-size: 18px;
+  text-align: justify;
 }
 
 a {
-   text-decoration: none;
-   color: $textos;
-   font-weight: 500;
+  text-decoration: none;
+  color: $textos;
+  font-weight: 500;
+	
+	&:hover {
+		display: inline;
+	  color: $carbassa;
+	}
 }
 
-a:hover {
-	display: inline;
-  color: $carbassa;
-}
 
 .hidden {
-   display: none;
+  display: none;
+}
+
+.container {
+	width: 100%;
 }
 
 
 /* HEADER */
 
 .logoPortada {
-	width: 1000px;
+	width: calc(100% - 40px);
+	max-width: 1000px;
 	padding: 0 20px;
 }
 
@@ -117,10 +121,111 @@ a:hover {
 
 /* PORTADA */
 
-.container {
-	min-height: calc(100% - 100px);
-	max-width: 1100px;
-	padding: 0 50px;
+.contingutPortada {
+	h2 {
+		padding: 0 50px;
+	}
+}
+
+.portadaRecuadres {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	&__superheroes {
+		background-color: white;
+		height: 400px;
+		margin: 0;
+		box-sizing: border-box;
+		flex-grow: 1;
+		flex-basis: 0;
+		text-align: center;
+		transition: 0.3s;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		h3 {
+			writing-mode: vertical-rl;
+			text-orientation: sideways;
+			opacity: 0;
+			transition: 0.2s;
+			font-size: 50px;
+      font-weight: bold;
+      text-align: left;
+      margin: 0;
+      padding: 20px 0;
+      color: white;
+      float: right;
+      text-shadow: 2px 2px 2px rgba(0,0,0, 0.5);
+		}
+
+		&:hover {
+			flex-grow: 3;
+			transition: 0.3s;
+			cursor: pointer;
+
+			h3 {
+        opacity: 1;
+        transition: 0.3s;
+      }
+		}
+
+		&--iron {
+			background-image: url('images/Portada/iron-man.jpg');
+		}
+		&--capi {
+			background-image: url('images/Portada/capitan.jpg');
+		}
+		&--batman {
+			background-image: url('images/Portada/batman.jpg');
+		}
+		&--spider {
+			background-image: url('images/Portada/spiderman.jpg');
+		}
+		&--thor {
+			background-image: url('images/Portada/thor.jpg');
+		}
+		&--super {
+			background-image: url('images/Portada/superman.jpg');
+		}
+		&--guardi {
+			background-image: url('images/Portada/guardianes.jpg');
+		}
+		&--venga {
+			background-image: url('images/Portada/vengadores.jpg');
+		}
+		&--dead {
+			background-image: url('images/Portada/deadpool.jpg');
+		}
+		&--wonder {
+			background-image: url('images/Portada/wonder.jpg');
+		}
+	}
+
+	&__inner {
+		width: 200px;
+		height: 200px;
+		margin: 20px;
+		background-color: grey;
+
+		&--empty {
+			flex: auto;
+			width: 0;
+			height: 0;
+		}
+	}
+}
+.portadaSuperheroe {
+	width: 100%;
+}
+
+.portadaProducto {
+	width: 100%;
+}
+
+.portadaDestacados {
+	width: 100%;
 }
 
 
@@ -135,13 +240,12 @@ footer {
 	font-family: Montserrat;
 	font-weight: 300;
 
-}
-
-footer a {
-	font-weight: 400;
-}
-
-footer a:hover {
-	color: black;
-	text-decoration: underline;
+	a {
+		font-weight: 400;
+		
+		&:hover {
+			color: black;
+			text-decoration: underline;
+		}
+	}
 }

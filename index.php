@@ -14,13 +14,61 @@ get_header(); ?>
 	</header>
 
 	<div class="contingutPortada">
-		<div>
-			<h2>Categorias de productos</h2>
+		<div class="portadaSuperheroe">
+			<h2>¡Escoge tu superhéroe!</h2>
+			<div class="portadaRecuadres">
+				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--iron">
+					<h3>Iron Man</h3>
+				</div>
+				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--capi">
+					<h3>Capitan América</h3>
+				</div>
+				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--batman">
+					<h3>Batman</h3>
+				</div>
+				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--spider">
+					<h3>Spiderman</h3>
+				</div>
+				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--thor">
+					<h3>Thor</h3>
+				</div>
+				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--super">
+					<h3>Superman</h3>
+				</div>
+				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--guardi">
+					<h3>Guardianes de la Galáxia</h3>
+				</div>
+				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--venga">
+					<h3>Los Vengadores</h3>
+				</div>
+				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--dead">
+					<h3>Deadpool</h3>
+				</div>
+				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--wonder">
+					<h3>Wonder Woman</h3>
+				</div>
+			</div>
 		</div>
-		<div>
-			<h2>Etiquetas</h2>
+
+		<div class="portadaProducto">
+			<h2>o un tipo de producto</h2>
+			<div class="portadaRecuadres">
+				<div class="portadaRecuadres__inner">
+					Camisetas
+				</div>
+				<div class="portadaRecuadres__inner">
+					Funko Pop!
+				</div>
+				<div class="portadaRecuadres__inner">
+					Disfraces
+				</div>
+				<div class="portadaRecuadres__inner">
+					Réplicas
+				</div>
+			</div>
 		</div>
-		<div>
+
+		<div class="portadaDestacados">
 			<h2>Destacados</h2>
 		</div>
 	</div>
