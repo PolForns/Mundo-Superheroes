@@ -14,11 +14,11 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-/* * COLORS *
- * verd logo: #629d91;
- * carbassa: #f49542;
- * negre textos: #1e1e1e;
-*/
+/* * COLORS */
+$verd: #629d91;
+$carbassa: #f49542;
+$textos: #1e1e1e;
+
 
  /* SCROLL BAR */
 
@@ -31,17 +31,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #629d91; 
+    background: $verd; 
 }
 
 
 /* SELECCIO */
 
 ::selection {
-  background: #f49542;
+  background: $carbassa;
 }
 ::-moz-selection {
-  background: #f49542;
+  background: $carbassa;
 }
 
 
@@ -65,7 +65,7 @@ body {
 	font-weight: 400;
 	height: 100%;
 	width: 100%;
-	color: #1e1e1e;
+	color: $textos;
 }
 
 h1, h2, h3, h4 {
@@ -88,13 +88,13 @@ p {
 
 a {
    text-decoration: none;
-   color: #1e1e1e;
+   color: $textos;
    font-weight: 500;
 }
 
 a:hover {
 	display: inline;
-  color: #f49542;
+  color: $carbassa;
 }
 
 .hidden {
@@ -118,7 +118,7 @@ a:hover {
 /* PORTADA */
 
 .container {
-	min-height: 500px;
+	min-height: calc(100% - 100px);
 	max-width: 1100px;
 	padding: 0 50px;
 }
@@ -128,13 +128,13 @@ a:hover {
 
 footer {
 	width: 100%;
-	align-self: end;
 	text-align: center;
 	padding: 40px 0;
 	margin: 50px 0 0 0;
-	background-color: #629d91;
+	background-color: $verd;
 	font-family: Montserrat;
 	font-weight: 300;
+
 }
 
 footer a {

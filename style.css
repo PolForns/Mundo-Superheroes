@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/*
+Theme Name: Mundo Superheroes
+Theme URI: 
+Author: Pol Forns
+Author URI: https://polforns.com/
+Description: Tema realitzat per Pol Forns
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: pol forns
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* * COLORS */
+/* SCROLL BAR */
+::-webkit-scrollbar { width: 15px; }
+
+::-webkit-scrollbar-thumb { background: #888; }
+
+::-webkit-scrollbar-thumb:hover { background: #629d91; }
+
+/* SELECCIO */
+::selection { background: #f49542; }
+
+::-moz-selection { background: #f49542; }
+
+/* GENÈRICS */
+* { margin: 0; padding: 0; }
+
+header { text-align: center; font-family: Montserrat; }
+
+body { display: flex; justify-content: center; flex-wrap: wrap; font-family: Montserrat; font-weight: 400; height: 100%; width: 100%; color: #1e1e1e; }
+
+h1, h2, h3, h4 { font-family: Montserrat; font-weight: normal; }
+
+h1 { font-size: 50px; }
+
+h2 { font-size: 40px; }
+
+p { font-size: 18px; text-align: justify; }
+
+a { text-decoration: none; color: #1e1e1e; font-weight: 500; }
+
+a:hover { display: inline; color: #f49542; }
+
+.hidden { display: none; }
+
+/* HEADER */
+.logoPortada { width: 1000px; padding: 0 20px; }
+
+.logoPetit { width: 500px; padding: 0 20px; }
+
+/* PORTADA */
+.container { min-height: calc(100% - 100px); max-width: 1100px; padding: 0 50px; }
+
+/* FOOTER */
+footer { width: 100%; text-align: center; padding: 40px 0; margin: 50px 0 0 0; background-color: #629d91; font-family: Montserrat; font-weight: 300; }
+
+footer a { font-weight: 400; }
+
+footer a:hover { color: black; text-decoration: underline; }
