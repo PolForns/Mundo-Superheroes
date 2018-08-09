@@ -1,0 +1,13 @@
+.footer {
+	&__MS {
+		width: 50%;
+
+		&::after {
+			content: " - "
+		}
+	}
+
+	&__webBy {
+		width: 50%;
+	}
+}

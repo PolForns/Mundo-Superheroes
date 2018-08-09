@@ -64,7 +64,7 @@ a {
 	
 	&:hover {
 		display: inline;
-	  color: $carbassa;
+	  	color: $carbassa;
 	}
 }
 
@@ -88,4 +88,9 @@ a {
 .logoPetit {
 	width: 500px;
 	padding: 0 20px;
+}
+
+/* RESPONSIVE */
+@include medium {
+	@import 'medium';
 }

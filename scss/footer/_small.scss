@@ -1,5 +1,4 @@
 /* FOOTER */
-
 footer {
 	width: 100%;
 	text-align: center;
@@ -17,4 +16,19 @@ footer {
 			text-decoration: underline;
 		}
 	}
+}
+
+.footer {
+	&__MS {
+		width: 100%;
+	}
+
+	&__webBy {
+		width: 100%;
+	}
+}
+
+/* RESPONSIVE */
+@include medium {
+	@import 'medium';
 }
