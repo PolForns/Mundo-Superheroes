@@ -26,13 +26,13 @@ get_header(); ?>
 				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--batman">
 					<h3>Batman</h3>
 				</div>
-				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--spider">
+				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--spider portadaRecuadres__superheroes--mobile">
 					<h3>Spiderman</h3>
 				</div>
 				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--thor">
 					<h3>Thor</h3>
 				</div>
-				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--super">
+				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--super portadaRecuadres__superheroes--mobile">
 					<h3>Superman</h3>
 				</div>
 				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--guardi">
@@ -44,7 +44,7 @@ get_header(); ?>
 				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--dead">
 					<h3>Deadpool</h3>
 				</div>
-				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--wonder">
+				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--wonder portadaRecuadres__superheroes--mobile">
 					<h3>Wonder Woman</h3>
 				</div>
 			</div>

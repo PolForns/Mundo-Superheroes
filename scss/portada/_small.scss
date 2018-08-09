@@ -1,0 +1,123 @@
+/* PORTADA */
+
+.contingutPortada {
+	h2 {
+		padding: 0 50px;
+	}
+}
+
+.portadaRecuadres {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	&__superheroes {
+		background-color: white;
+		height: 400px;
+		margin: 0;
+		box-sizing: border-box;
+		flex-grow: 1;
+		flex-basis: 0;
+		text-align: center;
+		transition: 0.3s;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		h3 {
+			writing-mode: vertical-rl;
+			text-orientation: sideways;
+			opacity: 0;
+			display: none;
+			transition: 0.2s;
+			font-size: 50px;
+			font-weight: bold;
+			text-align: left;
+			margin: 0;
+			padding: 20px 0;
+			color: white;
+			float: right;
+			text-shadow: 2px 2px 2px rgba(0,0,0, 0.5);
+			user-select: none;
+		}
+
+		&:hover {
+			flex-grow: 3;
+			transition: 0.3s;
+			cursor: pointer;
+
+			h3 {
+				opacity: 1;
+				transition: 0.3s;
+				display: block;
+      }
+		}
+
+		&--iron {
+			background-image: url('images/Portada/iron-man.jpg');
+		}
+		&--capi {
+			background-image: url('images/Portada/capitan.jpg');
+		}
+		&--batman {
+			background-image: url('images/Portada/batman.jpg');
+		}
+		&--spider {
+			background-image: url('images/Portada/spiderman.jpg');
+		}
+		&--thor {
+			background-image: url('images/Portada/thor.jpg');
+		}
+		&--super {
+			background-image: url('images/Portada/superman.jpg');
+		}
+		&--guardi {
+			background-image: url('images/Portada/guardianes.jpg');
+		}
+		&--venga {
+			background-image: url('images/Portada/vengadores.jpg');
+		}
+		&--dead {
+			background-image: url('images/Portada/deadpool.jpg');
+		}
+		&--wonder {
+			background-image: url('images/Portada/wonder.jpg');
+		}
+
+		&--mobile {
+			display: none;
+		}
+	}
+
+	&__inner {
+		width: 200px;
+		height: 200px;
+		margin: 20px;
+		background-color: grey;
+
+		&--empty {
+			flex: auto;
+			width: 0;
+			height: 0;
+		}
+	}
+}
+.portadaSuperheroe {
+	width: 100%;
+}
+
+.portadaProducto {
+	width: 100%;
+}
+
+.portadaDestacados {
+	width: 100%;
+}
+
+/* RESPONSIVE */
+@include medium {
+	@import 'medium';
+}
+@include large {
+	@import 'large';
+}

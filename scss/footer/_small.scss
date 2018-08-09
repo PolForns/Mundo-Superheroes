@@ -1,0 +1,20 @@
+/* FOOTER */
+
+footer {
+	width: 100%;
+	text-align: center;
+	padding: 40px 0;
+	margin: 50px 0 0 0;
+	background-color: $verd;
+	font-family: Montserrat;
+	font-weight: 300;
+
+	a {
+		font-weight: 400;
+		
+		&:hover {
+			color: black;
+			text-decoration: underline;
+		}
+	}
+}
