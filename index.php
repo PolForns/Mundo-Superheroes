@@ -11,7 +11,7 @@ get_header(); ?>
 		
 	<header>
 		<!-- <h1>MUNDO SUPERHÉROES</h1> -->
-		<img class="" src="images/logo.png" alt="Mundo Superhéroes">
+		<img class="logoPortada" src="http://mundo-superheroes.com/wp-content/themes/mundo-superheroes/images/logo.png" alt="Mundo Superhéroes">
 	</header>
 
 	<div class="contingutPortada">
@@ -27,13 +27,13 @@ get_header(); ?>
 				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--batman">
 					<h3>Batman</h3>
 				</div>
-				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--spider portadaRecuadres__superheroes--mobile">
+				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--spider portadaRecuadres__superheroes--large">
 					<h3>Spiderman</h3>
 				</div>
 				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--thor">
 					<h3>Thor</h3>
 				</div>
-				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--super portadaRecuadres__superheroes--mobile">
+				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--super portadaRecuadres__superheroes--large">
 					<h3>Superman</h3>
 				</div>
 				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--guardi">
@@ -45,7 +45,7 @@ get_header(); ?>
 				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--dead">
 					<h3>Deadpool</h3>
 				</div>
-				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--wonder portadaRecuadres__superheroes--mobile">
+				<div class="portadaRecuadres__superheroes portadaRecuadres__superheroes--wonder portadaRecuadres__superheroes--large">
 					<h3>Wonder Woman</h3>
 				</div>
 			</div>

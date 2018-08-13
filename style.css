@@ -156,11 +156,13 @@ a:hover { display: inline; color: #f49542; }
 
 /* RESPONSIVE */
 /* HEADER */
-.logoPortada { width: calc(100% - 40px); max-width: 1000px; padding: 0 20px; }
+.logoPortada { width: calc(100% - 40px); max-width: 1000px; padding: 20px; }
 
 .logoPetit { width: 500px; padding: 0 20px; }
 
 /* RESPONSIVE */
+@media only screen and (min-width: 768px) { .logoPortada { padding: 20px 20px 40px; } }
+
 /* FOOTER */
 footer { width: 100%; text-align: center; padding: 20px 0; margin: 50px 0 0 0; background-color: #629d91; font-family: Montserrat; font-weight: 300; }
 
@@ -194,27 +196,27 @@ footer div { padding: 10px 0; }
 
 .portadaRecuadres__superheroes:hover h3 { opacity: 1; transition: 0.3s; display: block; }
 
-.portadaRecuadres__superheroes--iron { background-image: url("images/Portada/iron-man.jpg"); }
+.portadaRecuadres__superheroes--iron { background-image: url("images/portada/iron-man.jpg"); }
 
-.portadaRecuadres__superheroes--capi { background-image: url("images/Portada/capitan.jpg"); }
+.portadaRecuadres__superheroes--capi { background-image: url("images/portada/capitan.jpg"); }
 
-.portadaRecuadres__superheroes--batman { background-image: url("images/Portada/batman.jpg"); }
+.portadaRecuadres__superheroes--batman { background-image: url("images/portada/batman.jpg"); }
 
-.portadaRecuadres__superheroes--spider { background-image: url("images/Portada/spiderman.jpg"); }
+.portadaRecuadres__superheroes--spider { background-image: url("images/portada/spiderman.jpg"); }
 
-.portadaRecuadres__superheroes--thor { background-image: url("images/Portada/thor.jpg"); }
+.portadaRecuadres__superheroes--thor { background-image: url("images/portada/thor.jpg"); }
 
-.portadaRecuadres__superheroes--super { background-image: url("images/Portada/superman.jpg"); }
+.portadaRecuadres__superheroes--super { background-image: url("images/portada/superman.jpg"); }
 
-.portadaRecuadres__superheroes--guardi { background-image: url("images/Portada/guardianes.jpg"); }
+.portadaRecuadres__superheroes--guardi { background-image: url("images/portada/guardianes.jpg"); }
 
-.portadaRecuadres__superheroes--venga { background-image: url("images/Portada/vengadores.jpg"); }
+.portadaRecuadres__superheroes--venga { background-image: url("images/portada/vengadores.jpg"); }
 
-.portadaRecuadres__superheroes--dead { background-image: url("images/Portada/deadpool.jpg"); }
+.portadaRecuadres__superheroes--dead { background-image: url("images/portada/deadpool.jpg"); }
 
-.portadaRecuadres__superheroes--wonder { background-image: url("images/Portada/wonder.jpg"); }
+.portadaRecuadres__superheroes--wonder { background-image: url("images/portada/wonder.jpg"); }
 
-.portadaRecuadres__superheroes--mobile { display: none; }
+.portadaRecuadres__superheroes--large { display: none; }
 
 .portadaRecuadres__inner { width: 200px; height: 200px; margin: 20px; background-color: grey; }
 
@@ -227,4 +229,4 @@ footer div { padding: 10px 0; }
 .portadaDestacados { width: 100%; }
 
 /* RESPONSIVE */
-@media only screen and (min-width: 768px) { .portadaRecuadres__superheroes--mobile { display: block; } }
+@media only screen and (min-width: 768px) { .portadaRecuadres__superheroes--large { display: block; } }
