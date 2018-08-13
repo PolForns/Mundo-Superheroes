@@ -2,7 +2,7 @@
 footer {
 	width: 100%;
 	text-align: center;
-	padding: 40px 0;
+	padding: 20px 0;
 	margin: 50px 0 0 0;
 	background-color: $verd;
 	font-family: Montserrat;
@@ -16,16 +16,18 @@ footer {
 			text-decoration: underline;
 		}
 	}
+
+	div {
+		padding: 10px 0;
+	}
 }
 
-.footer {
-	&__MS {
-		width: 100%;
-	}
+.footer__MS {
+	width: 100%;
+}
 
-	&__webBy {
-		width: 100%;
-	}
+.footer__webBy {
+	width: 100%;
 }
 
 /* RESPONSIVE */

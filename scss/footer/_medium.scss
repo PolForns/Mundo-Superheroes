@@ -1,13 +1,24 @@
-.footer {
-	&__MS {
-		width: 50%;
+footer {
+	padding: 40px 0;
 
-		&::after {
-			content: " - "
-		}
+	div {
+		padding: 0;
 	}
 
-	&__webBy {
-		width: 50%;
+}
+
+.footer__MS {
+	width: 50%;
+	float: left;
+	text-align: right;
+
+	&::after {
+		content: "-"
 	}
+}
+
+.footer__webBy {
+	width: 50%;
+	float: left;
+	text-align: left;
 }

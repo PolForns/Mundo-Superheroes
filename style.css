@@ -154,6 +154,7 @@ a:hover { display: inline; color: #f49542; }
 
 .container { width: 100%; }
 
+/* RESPONSIVE */
 /* HEADER */
 .logoPortada { width: calc(100% - 40px); max-width: 1000px; padding: 0 20px; }
 
@@ -161,20 +162,24 @@ a:hover { display: inline; color: #f49542; }
 
 /* RESPONSIVE */
 /* FOOTER */
-footer { width: 100%; text-align: center; padding: 40px 0; margin: 50px 0 0 0; background-color: #629d91; font-family: Montserrat; font-weight: 300; }
+footer { width: 100%; text-align: center; padding: 20px 0; margin: 50px 0 0 0; background-color: #629d91; font-family: Montserrat; font-weight: 300; }
 
 footer a { font-weight: 400; }
 
 footer a:hover { color: black; text-decoration: underline; }
+
+footer div { padding: 10px 0; }
 
 .footer__MS { width: 100%; }
 
 .footer__webBy { width: 100%; }
 
 /* RESPONSIVE */
-@media only screen and (min-width: 768px) { .footer__MS { width: 50%; }
-  .footer__MS::after { content: " - "; }
-  .footer__webBy { width: 50%; } }
+@media only screen and (min-width: 768px) { footer { padding: 40px 0; }
+  footer div { padding: 0; }
+  .footer__MS { width: 50%; float: left; text-align: right; }
+  .footer__MS::after { content: "-"; }
+  .footer__webBy { width: 50%; float: left; text-align: left; } }
 
 /* PORTADA */
 .contingutPortada h2 { padding: 0 50px; }

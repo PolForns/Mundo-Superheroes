@@ -1,7 +1,7 @@
 <?php
 
 /*
-* Template Name: Paàgina d'inici
+* Template Name: Pàgina d'inici
 * Description: Web Mundo Superheroes
 */
 
@@ -10,7 +10,8 @@ get_header(); ?>
 <div class="container">
 		
 	<header>
-		<img class="logoPortada" src="http://www.mundo-superheroes.com/wp-content/uploads/2017/12/logo-portada.png" alt="Logo Mundo Superhéroes">
+		<!-- <h1>MUNDO SUPERHÉROES</h1> -->
+		<img class="" src="images/logo.png" alt="Mundo Superhéroes">
 	</header>
 
 	<div class="contingutPortada">
