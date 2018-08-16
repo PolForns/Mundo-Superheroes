@@ -49,38 +49,70 @@ get_header(); ?>
 					<h3>Wonder Woman</h3>
 				</div>
 			</div>
+			<div class="portadaRecuadres__verMas">
+				<a href="">VER MÁS</a>
+			</div>
 		</div>
 
-		<div class="portadaProducto">
-			<h2>o un tipo de producto</h2>
+		<div class="portadaArticles">
+			<h2>Artículos destacados</h2>
 			<div class="portadaRecuadres">
-				<div class="portadaRecuadres__inner">
-					Camisetas
-				</div>
-				<div class="portadaRecuadres__inner">
-					Funko Pop!
-				</div>
-				<div class="portadaRecuadres__inner">
-					Disfraces
-				</div>
-				<div class="portadaRecuadres__inner">
-					Réplicas
+				<div class="portadaRecuadres__articulo">
+					Articulo 1
 				</div>
 			</div>
 		</div>
 
-		<div class="portadaDestacados">
-			<h2>Destacados</h2>
+		<div class="portadaProducto">
+			<h2>Productos</h2>
+			<div class="portadaRecuadres">
+				<div class="portadaRecuadres__producto portadaRecuadres__producto--camisetas">
+					<h4>Camisetas</h4>
+				</div>
+				<div class="portadaRecuadres__producto portadaRecuadres__producto--pop">
+					<h4>Funko Pop!</h4>
+				</div>
+				<div class="portadaRecuadres__producto portadaRecuadres__producto--disfraces">
+					<h4>Disfraces</h4>
+				</div>
+				<div class="portadaRecuadres__producto portadaRecuadres__producto--replicas">
+					<h4>Réplicas</h4>
+				</div>
+				<div class="portadaRecuadres__producto portadaRecuadres__producto--posters">
+					<h4>Posters</h4>
+				</div>
+				<div class="portadaRecuadres__producto portadaRecuadres__producto--figuras">
+					<h4>Figuras</h4>
+				</div>
+				<div class="portadaRecuadres__producto portadaRecuadres__producto--comics">
+					<h4>Cómics</h4>
+				</div>
+				<div class="portadaRecuadres__producto portadaRecuadres__producto--complementos">
+					<h4>Complementos</h4>
+				</div>
+				<div class="portadaRecuadres__producto portadaRecuadres__producto--llaveros">
+					<h4>Llaveros</h4>
+				</div>
+				<div class="portadaRecuadres__producto portadaRecuadres__producto--peliculas">
+					<h4>Películas</h4>
+				</div>
+				<div class="portadaRecuadres__producto portadaRecuadres__producto--peluches">
+					<h4>Peluches</h4>
+				</div>
+				<div class="portadaRecuadres__producto portadaRecuadres__producto--objetos">
+					<h4>Objetos</h4>
+				</div>
+				<div class="portadaRecuadres__producto portadaRecuadres__producto--pines">
+					<h4>Pines</h4>
+				</div>
+				<div class="portadaRecuadres__producto portadaRecuadres__producto--ropa">
+					<h4>Ropa</h4>
+				</div>
+			</div>
 		</div>
+
 	</div>
 
-	<?php
-		while ( have_posts() ) : the_post();
-			the_content();
-		endwhile;
-	?>
-
 </div>
-
 
 <?php get_footer(); ?>

@@ -2,8 +2,20 @@
 
 .contingutPortada {
 	h2 {
-		padding: 0 50px;
+		padding: 40px 50px;
 	}
+}
+
+.portadaSuperheroe {
+	width: 100%;
+}
+
+.portadaProducto {
+	width: 100%;
+}
+
+.portadaDestacados {
+	width: 100%;
 }
 
 .portadaRecuadres {
@@ -88,30 +100,259 @@
 			display: none;
 		}
 	}
+	&__verMas {
+		padding: 20px 50px;
+		font-size: 20px;
+	}
 
-	&__inner {
+	&__articulo {
 		width: 200px;
 		height: 200px;
 		margin: 20px;
 		background-color: grey;
+	}
 
-		&--empty {
-			flex: auto;
-			width: 0;
-			height: 0;
+	&__producto {
+		width: 150px;
+		height: 150px;
+		margin: 10px;
+		text-align: center;
+		cursor: pointer;
+		background-size: cover !important;
+
+		h4 {
+			font-size: 22px;
+			color: white;
+			user-select: none;
+			text-transform: uppercase;
+			padding: 63px 0;
+			text-shadow: 2px 2px 2px rgba(0,0,0, 0.5);
+			opacity: 0;
+			transition: 0.3s;
+		}
+
+		&:hover {
+			h4 {
+				opacity: 1;
+				transition: 0.2s;
+      }
+		}
+
+		&--camisetas {
+			background: linear-gradient(
+	      rgba(98, 157, 145, 0), 
+	      rgba(98, 157, 145, 0)
+	    ),
+	    url('images/categories/camisetas/0.jpg');
+
+	    &:hover {
+	    	background: linear-gradient(
+		      rgba(98, 157, 145, 0.9), 
+		      rgba(98, 157, 145, 0.9)
+		    ),
+		    url('images/categories/camisetas/0.jpg');
+	    }
+		}
+		&--pop {
+			background: linear-gradient(
+	      rgba(98, 157, 145, 0), 
+	      rgba(98, 157, 145, 0)
+	    ),
+	    url('images/categories/pop/0.jpg');
+
+	    &:hover {
+				background: linear-gradient(
+		      rgba(98, 157, 145, 0.9), 
+		      rgba(98, 157, 145, 0.9)
+		    ),
+		   	url('images/categories/pop/0.jpg');   	
+	    }
+		}
+		&--disfraces {
+			background: linear-gradient(
+	      rgba(98, 157, 145, 0), 
+	      rgba(98, 157, 145, 0)
+	    ),
+	    url('images/categories/disfraces/0.jpg');
+
+	    &:hover {
+				background: linear-gradient(
+		      rgba(98, 157, 145, 0.9), 
+		      rgba(98, 157, 145, 0.9)
+		    ),
+				url('images/categories/disfraces/0.jpg');
+	    }
+		}
+		&--replicas {
+			background: linear-gradient(
+	      rgba(98, 157, 145, 0), 
+	      rgba(98, 157, 145, 0)
+	    ),
+	    url('images/categories/replicas/0.jpg');
+
+	    &:hover {
+				background: linear-gradient(
+		      rgba(98, 157, 145, 0.9), 
+		      rgba(98, 157, 145, 0.9)
+		    ),
+				url('images/categories/replicas/0.jpg');
+	    }
+		}
+		&--posters {
+			background: linear-gradient(
+	      rgba(98, 157, 145, 0), 
+	      rgba(98, 157, 145, 0)
+	    ),
+	    url('images/categories/posters/0.jpg');
+
+	    &:hover {
+				background: linear-gradient(
+		      rgba(98, 157, 145, 0.9), 
+		      rgba(98, 157, 145, 0.9)
+		    ),
+				url('images/categories/posters/0.jpg');
+	    }
+		}
+		&--figuras {
+			background: linear-gradient(
+	      rgba(98, 157, 145, 0), 
+	      rgba(98, 157, 145, 0)
+	    ),
+	    url('images/categories/figuras/0.jpg');
+
+	    &:hover {
+				background: linear-gradient(
+		      rgba(98, 157, 145, 0.9), 
+		      rgba(98, 157, 145, 0.9)
+		    ),
+				url('images/categories/figuras/0.jpg');
+	    }
+		}
+		&--comics {
+			background: linear-gradient(
+	      rgba(98, 157, 145, 0), 
+	      rgba(98, 157, 145, 0)
+	    ),
+	    url('images/categories/comics/0.jpg');
+
+	    &:hover {
+				background: linear-gradient(
+		      rgba(98, 157, 145, 0.9), 
+		      rgba(98, 157, 145, 0.9)
+		    ),
+				url('images/categories/comics/0.jpg');
+	    }
+		}
+		&--complementos {
+			background: linear-gradient(
+	      rgba(98, 157, 145, 0), 
+	      rgba(98, 157, 145, 0)
+	    ),
+	    url('images/categories/complementos/0.jpg');
+
+	    &:hover {
+				background: linear-gradient(
+		      rgba(98, 157, 145, 0.9), 
+		      rgba(98, 157, 145, 0.9)
+		    ),
+				url('images/categories/complementos/0.jpg');
+	    }
+
+	    h4 {
+				font-size: 15px;
+			}
+		}
+		&--llaveros {
+			background: linear-gradient(
+	      rgba(98, 157, 145, 0), 
+	      rgba(98, 157, 145, 0)
+	    ),
+	    url('images/categories/llaveros/0.jpg');
+
+	    &:hover {
+				background: linear-gradient(
+		      rgba(98, 157, 145, 0.9), 
+		      rgba(98, 157, 145, 0.9)
+		    ),
+				url('images/categories/llaveros/0.jpg');
+	    }
+		}
+		&--peliculas {
+			background: linear-gradient(
+	      rgba(98, 157, 145, 0), 
+	      rgba(98, 157, 145, 0)
+	    ),
+	    url('images/categories/peliculas/0.jpg');
+
+	    &:hover {
+				background: linear-gradient(
+		      rgba(98, 157, 145, 0.9), 
+		      rgba(98, 157, 145, 0.9)
+		    ),
+				url('images/categories/peliculas/0.jpg');
+	    }
+		}
+		&--peluches {
+			background: linear-gradient(
+	      rgba(98, 157, 145, 0), 
+	      rgba(98, 157, 145, 0)
+	    ),
+	    url('images/categories/peluches/0.jpg');
+
+	    &:hover {
+				background: linear-gradient(
+		      rgba(98, 157, 145, 0.9), 
+		      rgba(98, 157, 145, 0.9)
+		    ),
+				url('images/categories/peluches/0.jpg');
+	    }
+		}
+		&--objetos {
+			background: linear-gradient(
+	      rgba(98, 157, 145, 0), 
+	      rgba(98, 157, 145, 0)
+	    ),
+	    url('images/categories/objetos/0.jpg');
+
+	    &:hover {
+				background: linear-gradient(
+		      rgba(98, 157, 145, 0.9), 
+		      rgba(98, 157, 145, 0.9)
+		    ),
+				url('images/categories/objetos/0.jpg');
+	    }
+		}
+		&--pines {
+			background: linear-gradient(
+	      rgba(98, 157, 145, 0), 
+	      rgba(98, 157, 145, 0)
+	    ),
+	    url('images/categories/pines/0.jpg');
+
+	    &:hover {
+				background: linear-gradient(
+		      rgba(98, 157, 145, 0.9), 
+		      rgba(98, 157, 145, 0.9)
+		    ),
+				url('images/categories/pines/0.jpg');
+	    }
+		}
+		&--ropa {
+			background: linear-gradient(
+	      rgba(98, 157, 145, 0), 
+	      rgba(98, 157, 145, 0)
+	    ),
+	    url('images/categories/ropa/0.jpg');
+
+	    &:hover {
+				background: linear-gradient(
+		      rgba(98, 157, 145, 0.9), 
+		      rgba(98, 157, 145, 0.9)
+		    ),
+				url('images/categories/ropa/0.jpg');
+	    }
 		}
 	}
-}
-.portadaSuperheroe {
-	width: 100%;
-}
-
-.portadaProducto {
-	width: 100%;
-}
-
-.portadaDestacados {
-	width: 100%;
 }
 
 /* RESPONSIVE */
