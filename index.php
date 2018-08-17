@@ -10,8 +10,7 @@ get_header(); ?>
 <div class="container">
 		
 	<header>
-		<!-- <h1>MUNDO SUPERHÉROES</h1> -->
-		<img class="logoPortada" src="http://mundo-superheroes.com/wp-content/themes/mundo-superheroes/images/logo.png" alt="Mundo Superhéroes">
+		<a href="http://mundo-superheroes.com"><img class="logoPortada" src="http://mundo-superheroes.com/wp-content/themes/mundo-superheroes/images/logo.png" alt="Mundo Superhéroes"></a>
 	</header>
 
 	<div class="contingutPortada">
@@ -50,7 +49,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="portadaRecuadres__verMas">
-				<a href="">VER MÁS</a>
+				<a href="http://www.mundo-superheroes.com/superheroes">VER MÁS</a>
 			</div>
 		</div>
 
@@ -58,7 +57,7 @@ get_header(); ?>
 			<h2>Artículos destacados</h2>
 			<div class="portadaRecuadres">
 				<div class="portadaRecuadres__articulo">
-					Articulo 1
+					<a href="http://www.mundo-superheroes.com/casco-iron-man">Réplica del Casco Iron Man</a>
 				</div>
 			</div>
 		</div>

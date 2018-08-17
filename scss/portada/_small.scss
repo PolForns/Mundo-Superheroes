@@ -122,11 +122,12 @@
 
 		h4 {
 			font-size: 22px;
-			color: white;
+			font-weight: 800;
+			color: black;
 			user-select: none;
 			text-transform: uppercase;
 			padding: 63px 0;
-			text-shadow: 2px 2px 2px rgba(0,0,0, 0.5);
+			//text-shadow: 2px 2px 2px rgba(0,0,0, 0.5);
 			opacity: 0;
 			transition: 0.3s;
 		}
@@ -140,214 +141,214 @@
 
 		&--camisetas {
 			background: linear-gradient(
-	      rgba(98, 157, 145, 0), 
-	      rgba(98, 157, 145, 0)
+	      rgba(244, 149, 66, 0), 
+	      rgba(244, 149, 66, 0)
 	    ),
 	    url('images/categories/camisetas/0.jpg');
 
 	    &:hover {
 	    	background: linear-gradient(
-		      rgba(98, 157, 145, 0.9), 
-		      rgba(98, 157, 145, 0.9)
+		      rgba(244, 149, 66, 0.9), 
+		      rgba(244, 149, 66, 0.9)
 		    ),
 		    url('images/categories/camisetas/0.jpg');
 	    }
 		}
 		&--pop {
 			background: linear-gradient(
-	      rgba(98, 157, 145, 0), 
-	      rgba(98, 157, 145, 0)
+	      rgba(244, 149, 66, 0), 
+	      rgba(244, 149, 66, 0)
 	    ),
 	    url('images/categories/pop/0.jpg');
 
 	    &:hover {
 				background: linear-gradient(
-		      rgba(98, 157, 145, 0.9), 
-		      rgba(98, 157, 145, 0.9)
+		      rgba(244, 149, 66, 0.9), 
+		      rgba(244, 149, 66, 0.9)
 		    ),
 		   	url('images/categories/pop/0.jpg');   	
 	    }
 		}
 		&--disfraces {
 			background: linear-gradient(
-	      rgba(98, 157, 145, 0), 
-	      rgba(98, 157, 145, 0)
+	      rgba(244, 149, 66, 0), 
+	      rgba(244, 149, 66, 0)
 	    ),
 	    url('images/categories/disfraces/0.jpg');
 
 	    &:hover {
 				background: linear-gradient(
-		      rgba(98, 157, 145, 0.9), 
-		      rgba(98, 157, 145, 0.9)
+		      rgba(244, 149, 66, 0.9), 
+		      rgba(244, 149, 66, 0.9)
 		    ),
 				url('images/categories/disfraces/0.jpg');
 	    }
 		}
 		&--replicas {
 			background: linear-gradient(
-	      rgba(98, 157, 145, 0), 
-	      rgba(98, 157, 145, 0)
+	      rgba(244, 149, 66, 0), 
+	      rgba(244, 149, 66, 0)
 	    ),
 	    url('images/categories/replicas/0.jpg');
 
 	    &:hover {
 				background: linear-gradient(
-		      rgba(98, 157, 145, 0.9), 
-		      rgba(98, 157, 145, 0.9)
+		      rgba(244, 149, 66, 0.9), 
+		      rgba(244, 149, 66, 0.9)
 		    ),
 				url('images/categories/replicas/0.jpg');
 	    }
 		}
 		&--posters {
 			background: linear-gradient(
-	      rgba(98, 157, 145, 0), 
-	      rgba(98, 157, 145, 0)
+	      rgba(244, 149, 66, 0), 
+	      rgba(244, 149, 66, 0)
 	    ),
 	    url('images/categories/posters/0.jpg');
 
 	    &:hover {
 				background: linear-gradient(
-		      rgba(98, 157, 145, 0.9), 
-		      rgba(98, 157, 145, 0.9)
+		      rgba(244, 149, 66, 0.9), 
+		      rgba(244, 149, 66, 0.9)
 		    ),
 				url('images/categories/posters/0.jpg');
 	    }
 		}
 		&--figuras {
 			background: linear-gradient(
-	      rgba(98, 157, 145, 0), 
-	      rgba(98, 157, 145, 0)
+	      rgba(244, 149, 66, 0), 
+	      rgba(244, 149, 66, 0)
 	    ),
 	    url('images/categories/figuras/0.jpg');
 
 	    &:hover {
 				background: linear-gradient(
-		      rgba(98, 157, 145, 0.9), 
-		      rgba(98, 157, 145, 0.9)
+		      rgba(244, 149, 66, 0.9), 
+		      rgba(244, 149, 66, 0.9)
 		    ),
 				url('images/categories/figuras/0.jpg');
 	    }
 		}
 		&--comics {
 			background: linear-gradient(
-	      rgba(98, 157, 145, 0), 
-	      rgba(98, 157, 145, 0)
+	      rgba(244, 149, 66, 0), 
+	      rgba(244, 149, 66, 0)
 	    ),
 	    url('images/categories/comics/0.jpg');
 
 	    &:hover {
 				background: linear-gradient(
-		      rgba(98, 157, 145, 0.9), 
-		      rgba(98, 157, 145, 0.9)
+		      rgba(244, 149, 66, 0.9), 
+		      rgba(244, 149, 66, 0.9)
 		    ),
 				url('images/categories/comics/0.jpg');
 	    }
 		}
 		&--complementos {
 			background: linear-gradient(
-	      rgba(98, 157, 145, 0), 
-	      rgba(98, 157, 145, 0)
+	      rgba(244, 149, 66, 0), 
+	      rgba(244, 149, 66, 0)
 	    ),
 	    url('images/categories/complementos/0.jpg');
 
 	    &:hover {
 				background: linear-gradient(
-		      rgba(98, 157, 145, 0.9), 
-		      rgba(98, 157, 145, 0.9)
+		      rgba(244, 149, 66, 0.9), 
+		      rgba(244, 149, 66, 0.9)
 		    ),
 				url('images/categories/complementos/0.jpg');
 	    }
 
 	    h4 {
-				font-size: 15px;
+				font-size: 14px;
 			}
 		}
 		&--llaveros {
 			background: linear-gradient(
-	      rgba(98, 157, 145, 0), 
-	      rgba(98, 157, 145, 0)
+	      rgba(244, 149, 66, 0), 
+	      rgba(244, 149, 66, 0)
 	    ),
 	    url('images/categories/llaveros/0.jpg');
 
 	    &:hover {
 				background: linear-gradient(
-		      rgba(98, 157, 145, 0.9), 
-		      rgba(98, 157, 145, 0.9)
+		      rgba(244, 149, 66, 0.9), 
+		      rgba(244, 149, 66, 0.9)
 		    ),
 				url('images/categories/llaveros/0.jpg');
 	    }
 		}
 		&--peliculas {
 			background: linear-gradient(
-	      rgba(98, 157, 145, 0), 
-	      rgba(98, 157, 145, 0)
+	      rgba(244, 149, 66, 0), 
+	      rgba(244, 149, 66, 0)
 	    ),
 	    url('images/categories/peliculas/0.jpg');
 
 	    &:hover {
 				background: linear-gradient(
-		      rgba(98, 157, 145, 0.9), 
-		      rgba(98, 157, 145, 0.9)
+		      rgba(244, 149, 66, 0.9), 
+		      rgba(244, 149, 66, 0.9)
 		    ),
 				url('images/categories/peliculas/0.jpg');
 	    }
 		}
 		&--peluches {
 			background: linear-gradient(
-	      rgba(98, 157, 145, 0), 
-	      rgba(98, 157, 145, 0)
+	      rgba(244, 149, 66, 0), 
+	      rgba(244, 149, 66, 0)
 	    ),
 	    url('images/categories/peluches/0.jpg');
 
 	    &:hover {
 				background: linear-gradient(
-		      rgba(98, 157, 145, 0.9), 
-		      rgba(98, 157, 145, 0.9)
+		      rgba(244, 149, 66, 0.9), 
+		      rgba(244, 149, 66, 0.9)
 		    ),
 				url('images/categories/peluches/0.jpg');
 	    }
 		}
 		&--objetos {
 			background: linear-gradient(
-	      rgba(98, 157, 145, 0), 
-	      rgba(98, 157, 145, 0)
+	      rgba(244, 149, 66, 0), 
+	      rgba(244, 149, 66, 0)
 	    ),
 	    url('images/categories/objetos/0.jpg');
 
 	    &:hover {
 				background: linear-gradient(
-		      rgba(98, 157, 145, 0.9), 
-		      rgba(98, 157, 145, 0.9)
+		      rgba(244, 149, 66, 0.9), 
+		      rgba(244, 149, 66, 0.9)
 		    ),
 				url('images/categories/objetos/0.jpg');
 	    }
 		}
 		&--pines {
 			background: linear-gradient(
-	      rgba(98, 157, 145, 0), 
-	      rgba(98, 157, 145, 0)
+	      rgba(244, 149, 66, 0), 
+	      rgba(244, 149, 66, 0)
 	    ),
 	    url('images/categories/pines/0.jpg');
 
 	    &:hover {
 				background: linear-gradient(
-		      rgba(98, 157, 145, 0.9), 
-		      rgba(98, 157, 145, 0.9)
+		      rgba(244, 149, 66, 0.9), 
+		      rgba(244, 149, 66, 0.9)
 		    ),
 				url('images/categories/pines/0.jpg');
 	    }
 		}
 		&--ropa {
 			background: linear-gradient(
-	      rgba(98, 157, 145, 0), 
-	      rgba(98, 157, 145, 0)
+	      rgba(244, 149, 66, 0), 
+	      rgba(244, 149, 66, 0)
 	    ),
 	    url('images/categories/ropa/0.jpg');
 
 	    &:hover {
 				background: linear-gradient(
-		      rgba(98, 157, 145, 0.9), 
-		      rgba(98, 157, 145, 0.9)
+		      rgba(244, 149, 66, 0.9), 
+		      rgba(244, 149, 66, 0.9)
 		    ),
 				url('images/categories/ropa/0.jpg');
 	    }

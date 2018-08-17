@@ -1,0 +1,90 @@
+.contingutReviewProducte {
+	padding: 0;
+	margin: 50px auto;
+	width: 100%;
+	max-width: 1200px;
+
+	h2 {
+		margin: 0 0 30px;
+	}
+
+	p {
+		padding: 0 30px;
+		margin: 0;
+	}
+}
+
+.reviewIntro {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__info {
+		margin: 50px 0 20px;
+	}
+
+	&__image {
+		width: 100%;
+		max-width: 600px;
+		margin: 0 auto;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.reviewCaracteristicas {
+	margin: 0 auto;
+	width: 100%;
+
+	ul {
+		padding: 0 0 0 80px;
+	}
+
+	li {
+		margin: 10px 0;
+	}
+}
+
+.reviewAmazon1 {
+	margin: 50px 0 0;
+}
+
+.reviewVentajas {
+	margin: 50px 0 0;
+
+	ul {
+		padding: 0 0 0 50px;
+	}
+
+	li {
+		margin: 25px 0;
+	}
+}
+
+.reviewImatges {
+	margin: 50px 0 0;
+
+	img {
+		width: 33%;
+	}
+}
+
+iframe {
+	margin: 50px 0 0;
+	width: 1200px;
+	height: 675px;
+}
+
+.reviewConclusiones {
+	margin: 50px 0 0;
+}
+
+.reviewCompraFinal {
+	margin: 50px 0 0;
+}
+
+
+/* RESPONSIVE */
+@include medium {
+	@import 'medium';
+}

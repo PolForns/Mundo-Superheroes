@@ -4,20 +4,22 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: $verd; 
+    background: $verd;
 }
 
 
 /* SELECCIO */
 ::selection {
   background: $carbassa;
+  color: $verd;
 }
 ::-moz-selection {
   background: $carbassa;
+  color: $verd;
 }
 
 
@@ -46,26 +48,37 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-	font-size: 50px;
+	font-size: 40px;
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 30px;
 }
 
 p {
   font-size: 18px;
   text-align: justify;
+
+  a {
+  	color: $carbassa;
+  }
 }
 
 a {
   text-decoration: none;
-  color: $textos;
   font-weight: 500;
+  color: $textos;
 	
 	&:hover {
+  	color: $carbassa;
 		display: inline;
-	  	color: $carbassa;
+	  text-decoration: underline;
+	}
+}
+
+ul {
+	li {
+		font-size: 20px;
 	}
 }
 

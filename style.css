@@ -129,9 +129,9 @@ template { display: none; }
 ::-webkit-scrollbar-thumb:hover { background: #629d91; }
 
 /* SELECCIO */
-::selection { background: #f49542; }
+::selection { background: #f49542; color: #629d91; }
 
-::-moz-selection { background: #f49542; }
+::-moz-selection { background: #f49542; color: #629d91; }
 
 /* GENÈRICS */
 header { text-align: center; font-family: Montserrat; }
@@ -140,21 +140,29 @@ body { display: flex; justify-content: center; flex-wrap: wrap; font-family: Mon
 
 h1, h2, h3, h4 { font-family: Montserrat; font-weight: normal; margin: 0; }
 
-h1 { font-size: 50px; }
+h1 { font-size: 40px; }
 
-h2 { font-size: 40px; }
+h2 { font-size: 30px; }
 
 p { font-size: 18px; text-align: justify; }
 
-a { text-decoration: none; color: #1e1e1e; font-weight: 500; }
+p a { color: #f49542; }
 
-a:hover { display: inline; color: #f49542; }
+a { text-decoration: none; font-weight: 500; color: #1e1e1e; }
+
+a:hover { color: #f49542; display: inline; text-decoration: underline; }
+
+ul li { font-size: 20px; }
 
 .hidden { display: none; }
 
 .container { width: 100%; }
 
 /* RESPONSIVE */
+@media only screen and (min-width: 768px) { h1 { font-size: 50px; }
+  h2 { font-size: 40px; }
+  p { font-size: 20px; } }
+
 /* HEADER */
 .logoPortada { width: calc(100% - 40px); max-width: 1000px; padding: 20px; }
 
@@ -172,16 +180,15 @@ footer a:hover { color: black; text-decoration: underline; }
 
 footer div { padding: 10px 0; }
 
+.menuFooter { margin: 20px 0; }
+
 .footer__MS { width: 100%; }
 
 .footer__webBy { width: 100%; }
 
 /* RESPONSIVE */
 @media only screen and (min-width: 768px) { footer { padding: 40px 0; }
-  footer div { padding: 0; }
-  .footer__MS { width: 50%; float: left; text-align: right; }
-  .footer__MS::after { content: "-"; }
-  .footer__webBy { width: 50%; float: left; text-align: left; } }
+  footer div { padding: 0; } }
 
 /* PORTADA */
 .contingutPortada h2 { padding: 40px 50px; }
@@ -230,70 +237,110 @@ footer div { padding: 10px 0; }
 
 .portadaRecuadres__producto { width: 150px; height: 150px; margin: 10px; text-align: center; cursor: pointer; background-size: cover !important; }
 
-.portadaRecuadres__producto h4 { font-size: 22px; color: white; user-select: none; text-transform: uppercase; padding: 63px 0; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); opacity: 0; transition: 0.3s; }
+.portadaRecuadres__producto h4 { font-size: 22px; font-weight: 800; color: black; user-select: none; text-transform: uppercase; padding: 63px 0; opacity: 0; transition: 0.3s; }
 
 .portadaRecuadres__producto:hover h4 { opacity: 1; transition: 0.2s; }
 
-.portadaRecuadres__producto--camisetas { background: linear-gradient(rgba(98, 157, 145, 0), rgba(98, 157, 145, 0)), url("images/categories/camisetas/0.jpg"); }
+.portadaRecuadres__producto--camisetas { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/camisetas/0.jpg"); }
 
-.portadaRecuadres__producto--camisetas:hover { background: linear-gradient(rgba(98, 157, 145, 0.9), rgba(98, 157, 145, 0.9)), url("images/categories/camisetas/0.jpg"); }
+.portadaRecuadres__producto--camisetas:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/camisetas/0.jpg"); }
 
-.portadaRecuadres__producto--pop { background: linear-gradient(rgba(98, 157, 145, 0), rgba(98, 157, 145, 0)), url("images/categories/pop/0.jpg"); }
+.portadaRecuadres__producto--pop { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/pop/0.jpg"); }
 
-.portadaRecuadres__producto--pop:hover { background: linear-gradient(rgba(98, 157, 145, 0.9), rgba(98, 157, 145, 0.9)), url("images/categories/pop/0.jpg"); }
+.portadaRecuadres__producto--pop:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/pop/0.jpg"); }
 
-.portadaRecuadres__producto--disfraces { background: linear-gradient(rgba(98, 157, 145, 0), rgba(98, 157, 145, 0)), url("images/categories/disfraces/0.jpg"); }
+.portadaRecuadres__producto--disfraces { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/disfraces/0.jpg"); }
 
-.portadaRecuadres__producto--disfraces:hover { background: linear-gradient(rgba(98, 157, 145, 0.9), rgba(98, 157, 145, 0.9)), url("images/categories/disfraces/0.jpg"); }
+.portadaRecuadres__producto--disfraces:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/disfraces/0.jpg"); }
 
-.portadaRecuadres__producto--replicas { background: linear-gradient(rgba(98, 157, 145, 0), rgba(98, 157, 145, 0)), url("images/categories/replicas/0.jpg"); }
+.portadaRecuadres__producto--replicas { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/replicas/0.jpg"); }
 
-.portadaRecuadres__producto--replicas:hover { background: linear-gradient(rgba(98, 157, 145, 0.9), rgba(98, 157, 145, 0.9)), url("images/categories/replicas/0.jpg"); }
+.portadaRecuadres__producto--replicas:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/replicas/0.jpg"); }
 
-.portadaRecuadres__producto--posters { background: linear-gradient(rgba(98, 157, 145, 0), rgba(98, 157, 145, 0)), url("images/categories/posters/0.jpg"); }
+.portadaRecuadres__producto--posters { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/posters/0.jpg"); }
 
-.portadaRecuadres__producto--posters:hover { background: linear-gradient(rgba(98, 157, 145, 0.9), rgba(98, 157, 145, 0.9)), url("images/categories/posters/0.jpg"); }
+.portadaRecuadres__producto--posters:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/posters/0.jpg"); }
 
-.portadaRecuadres__producto--figuras { background: linear-gradient(rgba(98, 157, 145, 0), rgba(98, 157, 145, 0)), url("images/categories/figuras/0.jpg"); }
+.portadaRecuadres__producto--figuras { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/figuras/0.jpg"); }
 
-.portadaRecuadres__producto--figuras:hover { background: linear-gradient(rgba(98, 157, 145, 0.9), rgba(98, 157, 145, 0.9)), url("images/categories/figuras/0.jpg"); }
+.portadaRecuadres__producto--figuras:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/figuras/0.jpg"); }
 
-.portadaRecuadres__producto--comics { background: linear-gradient(rgba(98, 157, 145, 0), rgba(98, 157, 145, 0)), url("images/categories/comics/0.jpg"); }
+.portadaRecuadres__producto--comics { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/comics/0.jpg"); }
 
-.portadaRecuadres__producto--comics:hover { background: linear-gradient(rgba(98, 157, 145, 0.9), rgba(98, 157, 145, 0.9)), url("images/categories/comics/0.jpg"); }
+.portadaRecuadres__producto--comics:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/comics/0.jpg"); }
 
-.portadaRecuadres__producto--complementos { background: linear-gradient(rgba(98, 157, 145, 0), rgba(98, 157, 145, 0)), url("images/categories/complementos/0.jpg"); }
+.portadaRecuadres__producto--complementos { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/complementos/0.jpg"); }
 
-.portadaRecuadres__producto--complementos:hover { background: linear-gradient(rgba(98, 157, 145, 0.9), rgba(98, 157, 145, 0.9)), url("images/categories/complementos/0.jpg"); }
+.portadaRecuadres__producto--complementos:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/complementos/0.jpg"); }
 
-.portadaRecuadres__producto--complementos h4 { font-size: 15px; }
+.portadaRecuadres__producto--complementos h4 { font-size: 14px; }
 
-.portadaRecuadres__producto--llaveros { background: linear-gradient(rgba(98, 157, 145, 0), rgba(98, 157, 145, 0)), url("images/categories/llaveros/0.jpg"); }
+.portadaRecuadres__producto--llaveros { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/llaveros/0.jpg"); }
 
-.portadaRecuadres__producto--llaveros:hover { background: linear-gradient(rgba(98, 157, 145, 0.9), rgba(98, 157, 145, 0.9)), url("images/categories/llaveros/0.jpg"); }
+.portadaRecuadres__producto--llaveros:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/llaveros/0.jpg"); }
 
-.portadaRecuadres__producto--peliculas { background: linear-gradient(rgba(98, 157, 145, 0), rgba(98, 157, 145, 0)), url("images/categories/peliculas/0.jpg"); }
+.portadaRecuadres__producto--peliculas { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/peliculas/0.jpg"); }
 
-.portadaRecuadres__producto--peliculas:hover { background: linear-gradient(rgba(98, 157, 145, 0.9), rgba(98, 157, 145, 0.9)), url("images/categories/peliculas/0.jpg"); }
+.portadaRecuadres__producto--peliculas:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/peliculas/0.jpg"); }
 
-.portadaRecuadres__producto--peluches { background: linear-gradient(rgba(98, 157, 145, 0), rgba(98, 157, 145, 0)), url("images/categories/peluches/0.jpg"); }
+.portadaRecuadres__producto--peluches { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/peluches/0.jpg"); }
 
-.portadaRecuadres__producto--peluches:hover { background: linear-gradient(rgba(98, 157, 145, 0.9), rgba(98, 157, 145, 0.9)), url("images/categories/peluches/0.jpg"); }
+.portadaRecuadres__producto--peluches:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/peluches/0.jpg"); }
 
-.portadaRecuadres__producto--objetos { background: linear-gradient(rgba(98, 157, 145, 0), rgba(98, 157, 145, 0)), url("images/categories/objetos/0.jpg"); }
+.portadaRecuadres__producto--objetos { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/objetos/0.jpg"); }
 
-.portadaRecuadres__producto--objetos:hover { background: linear-gradient(rgba(98, 157, 145, 0.9), rgba(98, 157, 145, 0.9)), url("images/categories/objetos/0.jpg"); }
+.portadaRecuadres__producto--objetos:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/objetos/0.jpg"); }
 
-.portadaRecuadres__producto--pines { background: linear-gradient(rgba(98, 157, 145, 0), rgba(98, 157, 145, 0)), url("images/categories/pines/0.jpg"); }
+.portadaRecuadres__producto--pines { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/pines/0.jpg"); }
 
-.portadaRecuadres__producto--pines:hover { background: linear-gradient(rgba(98, 157, 145, 0.9), rgba(98, 157, 145, 0.9)), url("images/categories/pines/0.jpg"); }
+.portadaRecuadres__producto--pines:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/pines/0.jpg"); }
 
-.portadaRecuadres__producto--ropa { background: linear-gradient(rgba(98, 157, 145, 0), rgba(98, 157, 145, 0)), url("images/categories/ropa/0.jpg"); }
+.portadaRecuadres__producto--ropa { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/ropa/0.jpg"); }
 
-.portadaRecuadres__producto--ropa:hover { background: linear-gradient(rgba(98, 157, 145, 0.9), rgba(98, 157, 145, 0.9)), url("images/categories/ropa/0.jpg"); }
+.portadaRecuadres__producto--ropa:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/ropa/0.jpg"); }
 
 /* RESPONSIVE */
 @media only screen and (min-width: 768px) { .portadaRecuadres__superheroes--large { display: block; }
   .portadaRecuadres__producto { width: 200px; height: 200px; margin: 20px; }
-  .portadaRecuadres__producto h4 { font-size: 26px; padding: 80px 0; }
-  .portadaRecuadres__producto--complementos h4 { font-size: 22px; } }
+  .portadaRecuadres__producto h4 { font-size: 26px; padding: 85px 0; }
+  .portadaRecuadres__producto--complementos h4 { font-size: 20px; } }
+
+.contingutReviewProducte { padding: 0; margin: 50px auto; width: 100%; max-width: 1200px; }
+
+.contingutReviewProducte h2 { margin: 0 0 30px; }
+
+.contingutReviewProducte p { padding: 0 30px; margin: 0; }
+
+.reviewIntro { display: flex; flex-wrap: wrap; }
+
+.reviewIntro__info { margin: 50px 0 20px; }
+
+.reviewIntro__image { width: 100%; max-width: 600px; margin: 0 auto; }
+
+.reviewIntro__image img { width: 100%; }
+
+.reviewCaracteristicas { margin: 0 auto; width: 100%; }
+
+.reviewCaracteristicas ul { padding: 0 0 0 80px; }
+
+.reviewCaracteristicas li { margin: 10px 0; }
+
+.reviewAmazon1 { margin: 50px 0 0; }
+
+.reviewVentajas { margin: 50px 0 0; }
+
+.reviewVentajas ul { padding: 0 0 0 50px; }
+
+.reviewVentajas li { margin: 25px 0; }
+
+.reviewImatges { margin: 50px 0 0; }
+
+.reviewImatges img { width: 33%; }
+
+iframe { margin: 50px 0 0; width: 1200px; height: 675px; }
+
+.reviewConclusiones { margin: 50px 0 0; }
+
+.reviewCompraFinal { margin: 50px 0 0; }
+
+/* RESPONSIVE */

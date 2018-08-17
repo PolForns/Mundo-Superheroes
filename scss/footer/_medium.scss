@@ -6,19 +6,3 @@ footer {
 	}
 
 }
-
-.footer__MS {
-	width: 50%;
-	float: left;
-	text-align: right;
-
-	&::after {
-		content: "-"
-	}
-}
-
-.footer__webBy {
-	width: 50%;
-	float: left;
-	text-align: left;
-}
