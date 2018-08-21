@@ -1,10 +1,16 @@
-.portadaRecuadres {
+.portadaSuperheroe {
 	&__superheroes {
 		&--large {
 			display: block;
 		}
 	}
+}
 
+.portadaArticles__articulo {
+	width: calc(50% - 40px);
+}
+
+.portadaProducto {
 	&__producto {
 		width: 200px;
 		height: 200px;

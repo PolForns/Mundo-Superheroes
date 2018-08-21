@@ -3,7 +3,6 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>"/>
-<meta name="Description" content="<?php bloginfo('description');?>"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="profile" href="http://gmpg.org/xfn/11"/>
 <link rel="icon" href="http://www.mundo-superheroes.com/wp-content/uploads/2017/12/yeah.png" type="image/png">
@@ -28,3 +27,7 @@
 </head>
 	
 <body>
+
+	<header>
+		<a href="http://mundo-superheroes.com" title="Inicio - Mundo Superhéroes"><img class="logoPortada" src="http://mundo-superheroes.com/wp-content/themes/mundo-superheroes/images/logo.png" alt="Mundo Superhéroes"></a>
+	</header>

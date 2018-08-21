@@ -138,6 +138,8 @@ header { text-align: center; font-family: Montserrat; }
 
 body { display: flex; justify-content: center; flex-wrap: wrap; font-family: Montserrat; font-weight: 400; height: 100%; width: 100%; color: #1e1e1e; overflow-x: hidden; }
 
+div { box-sizing: border-box; }
+
 h1, h2, h3, h4 { font-family: Montserrat; font-weight: normal; margin: 0; }
 
 h1 { font-size: 35px; }
@@ -193,119 +195,130 @@ footer div { padding: 10px 0; }
 /* PORTADA */
 .contingutPortada h2 { padding: 40px 50px; }
 
-.portadaSuperheroe { width: 100%; }
+.portadaSuperheroe__recuadre { width: 100%; display: flex; flex-wrap: wrap; justify-content: center; }
 
-.portadaProducto { width: 100%; }
+.portadaSuperheroe__superheroes { background-color: white; height: 400px; margin: 0; flex-grow: 1; flex-basis: 0; text-align: center; transition: 0.3s; background-position: center; background-repeat: no-repeat; background-size: cover; }
 
-.portadaDestacados { width: 100%; }
+.portadaSuperheroe__superheroes h3 { writing-mode: vertical-rl; text-orientation: sideways; opacity: 0; display: none; transition: 0.2s; font-size: 50px; font-weight: bold; text-align: left; margin: 0; padding: 20px 0; color: white; float: right; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); user-select: none; }
 
-.portadaRecuadres { display: flex; flex-wrap: wrap; justify-content: center; }
+.portadaSuperheroe__superheroes:hover { flex-grow: 3; transition: 0.3s; cursor: pointer; }
 
-.portadaRecuadres__superheroes { background-color: white; height: 400px; margin: 0; box-sizing: border-box; flex-grow: 1; flex-basis: 0; text-align: center; transition: 0.3s; background-position: center; background-repeat: no-repeat; background-size: cover; }
+.portadaSuperheroe__superheroes:hover h3 { opacity: 1; transition: 0.3s; display: block; }
 
-.portadaRecuadres__superheroes h3 { writing-mode: vertical-rl; text-orientation: sideways; opacity: 0; display: none; transition: 0.2s; font-size: 50px; font-weight: bold; text-align: left; margin: 0; padding: 20px 0; color: white; float: right; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); user-select: none; }
+.portadaSuperheroe__superheroes--iron { background-image: url("images/portada/iron-man.jpg"); }
 
-.portadaRecuadres__superheroes:hover { flex-grow: 3; transition: 0.3s; cursor: pointer; }
+.portadaSuperheroe__superheroes--capi { background-image: url("images/portada/capitan.jpg"); }
 
-.portadaRecuadres__superheroes:hover h3 { opacity: 1; transition: 0.3s; display: block; }
+.portadaSuperheroe__superheroes--batman { background-image: url("images/portada/batman.jpg"); }
 
-.portadaRecuadres__superheroes--iron { background-image: url("images/portada/iron-man.jpg"); }
+.portadaSuperheroe__superheroes--spider { background-image: url("images/portada/spiderman.jpg"); }
 
-.portadaRecuadres__superheroes--capi { background-image: url("images/portada/capitan.jpg"); }
+.portadaSuperheroe__superheroes--thor { background-image: url("images/portada/thor.jpg"); }
 
-.portadaRecuadres__superheroes--batman { background-image: url("images/portada/batman.jpg"); }
+.portadaSuperheroe__superheroes--super { background-image: url("images/portada/superman.jpg"); }
 
-.portadaRecuadres__superheroes--spider { background-image: url("images/portada/spiderman.jpg"); }
+.portadaSuperheroe__superheroes--guardi { background-image: url("images/portada/guardianes.jpg"); }
 
-.portadaRecuadres__superheroes--thor { background-image: url("images/portada/thor.jpg"); }
+.portadaSuperheroe__superheroes--venga { background-image: url("images/portada/vengadores.jpg"); }
 
-.portadaRecuadres__superheroes--super { background-image: url("images/portada/superman.jpg"); }
+.portadaSuperheroe__superheroes--dead { background-image: url("images/portada/deadpool.jpg"); }
 
-.portadaRecuadres__superheroes--guardi { background-image: url("images/portada/guardianes.jpg"); }
+.portadaSuperheroe__superheroes--wonder { background-image: url("images/portada/wonder.jpg"); }
 
-.portadaRecuadres__superheroes--venga { background-image: url("images/portada/vengadores.jpg"); }
+.portadaSuperheroe__superheroes--large { display: none; }
 
-.portadaRecuadres__superheroes--dead { background-image: url("images/portada/deadpool.jpg"); }
+.portadaSuperheroe__verMas { padding: 20px 50px; font-size: 20px; }
 
-.portadaRecuadres__superheroes--wonder { background-image: url("images/portada/wonder.jpg"); }
+.portadaArticles__recuadre { width: 100%; display: flex; flex-wrap: wrap; justify-content: center; }
 
-.portadaRecuadres__superheroes--large { display: none; }
+.portadaArticles__articulo { width: calc(100% - 40px); height: 250px; margin: 0 20px; font-size: 20px; position: relative; }
 
-.portadaRecuadres__verMas { padding: 20px 50px; font-size: 20px; }
+.portadaArticles__articulo a:hover { text-decoration: underline !important; color: #1e1e1e !important; }
 
-.portadaRecuadres__articulo { width: 200px; height: 200px; margin: 20px; background-color: grey; }
+.portadaArticles__articulo h3 { position: absolute; bottom: 0; left: 0; background-color: rgba(244, 149, 66, 0.9); padding: 10px; width: 100%; box-sizing: border-box; font-weight: 600; }
 
-.portadaRecuadres__producto { width: 150px; height: 150px; margin: 10px; text-align: center; cursor: pointer; background-size: cover !important; }
+.portadaArticles__articulo h3:hover { height: 100%; text-decoration: underline !important; }
 
-.portadaRecuadres__producto h4 { font-size: 22px; font-weight: 800; color: black; user-select: none; text-transform: uppercase; padding: 63px 0; opacity: 0; transition: 0.3s; }
+.portadaArticles__articulo--cascoIromMan { background-image: url("images/productes/casc-iron-man/casco-iron-man-300.jpg"); background-size: 250px 250px; background-repeat: no-repeat; background-position: center; }
 
-.portadaRecuadres__producto:hover h4 { opacity: 1; transition: 0.2s; }
+.portadaProducto { margin: 50px 0 0; }
 
-.portadaRecuadres__producto--camisetas { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/camisetas/0.jpg"); }
+.portadaProducto__recuadre { width: 100%; display: flex; flex-wrap: wrap; justify-content: center; }
 
-.portadaRecuadres__producto--camisetas:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/camisetas/0.jpg"); }
+.portadaProducto__producto { width: 150px; height: 150px; margin: 10px; text-align: center; cursor: pointer; background-size: cover !important; }
 
-.portadaRecuadres__producto--pop { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/pop/0.jpg"); }
+.portadaProducto__producto h4 { font-size: 22px; font-weight: 800; color: black; user-select: none; text-transform: uppercase; padding: 63px 0; opacity: 0; transition: 0.3s; }
 
-.portadaRecuadres__producto--pop:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/pop/0.jpg"); }
+.portadaProducto__producto:hover h4 { opacity: 1; transition: 0.2s; }
 
-.portadaRecuadres__producto--disfraces { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/disfraces/0.jpg"); }
+.portadaProducto__producto--camisetas { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/camisetas/0.jpg"); }
 
-.portadaRecuadres__producto--disfraces:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/disfraces/0.jpg"); }
+.portadaProducto__producto--camisetas:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/camisetas/0.jpg"); }
 
-.portadaRecuadres__producto--replicas { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/replicas/0.jpg"); }
+.portadaProducto__producto--pop { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/pop/0.jpg"); }
 
-.portadaRecuadres__producto--replicas:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/replicas/0.jpg"); }
+.portadaProducto__producto--pop:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/pop/0.jpg"); }
 
-.portadaRecuadres__producto--posters { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/posters/0.jpg"); }
+.portadaProducto__producto--disfraces { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/disfraces/0.jpg"); }
 
-.portadaRecuadres__producto--posters:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/posters/0.jpg"); }
+.portadaProducto__producto--disfraces:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/disfraces/0.jpg"); }
 
-.portadaRecuadres__producto--figuras { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/figuras/0.jpg"); }
+.portadaProducto__producto--replicas { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/replicas/0.jpg"); }
 
-.portadaRecuadres__producto--figuras:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/figuras/0.jpg"); }
+.portadaProducto__producto--replicas:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/replicas/0.jpg"); }
 
-.portadaRecuadres__producto--comics { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/comics/0.jpg"); }
+.portadaProducto__producto--posters { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/posters/0.jpg"); }
 
-.portadaRecuadres__producto--comics:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/comics/0.jpg"); }
+.portadaProducto__producto--posters:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/posters/0.jpg"); }
 
-.portadaRecuadres__producto--complementos { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/complementos/0.jpg"); }
+.portadaProducto__producto--figuras { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/figuras/0.jpg"); }
 
-.portadaRecuadres__producto--complementos:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/complementos/0.jpg"); }
+.portadaProducto__producto--figuras:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/figuras/0.jpg"); }
 
-.portadaRecuadres__producto--complementos h4 { font-size: 14px; }
+.portadaProducto__producto--comics { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/comics/0.jpg"); }
 
-.portadaRecuadres__producto--llaveros { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/llaveros/0.jpg"); }
+.portadaProducto__producto--comics:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/comics/0.jpg"); }
 
-.portadaRecuadres__producto--llaveros:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/llaveros/0.jpg"); }
+.portadaProducto__producto--complementos { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/complementos/0.jpg"); }
 
-.portadaRecuadres__producto--peliculas { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/peliculas/0.jpg"); }
+.portadaProducto__producto--complementos:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/complementos/0.jpg"); }
 
-.portadaRecuadres__producto--peliculas:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/peliculas/0.jpg"); }
+.portadaProducto__producto--complementos h4 { font-size: 14px; }
 
-.portadaRecuadres__producto--peluches { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/peluches/0.jpg"); }
+.portadaProducto__producto--llaveros { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/llaveros/0.jpg"); }
 
-.portadaRecuadres__producto--peluches:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/peluches/0.jpg"); }
+.portadaProducto__producto--llaveros:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/llaveros/0.jpg"); }
 
-.portadaRecuadres__producto--objetos { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/objetos/0.jpg"); }
+.portadaProducto__producto--peliculas { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/peliculas/0.jpg"); }
 
-.portadaRecuadres__producto--objetos:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/objetos/0.jpg"); }
+.portadaProducto__producto--peliculas:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/peliculas/0.jpg"); }
 
-.portadaRecuadres__producto--pines { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/pines/0.jpg"); }
+.portadaProducto__producto--peluches { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/peluches/0.jpg"); }
 
-.portadaRecuadres__producto--pines:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/pines/0.jpg"); }
+.portadaProducto__producto--peluches:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/peluches/0.jpg"); }
 
-.portadaRecuadres__producto--ropa { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/ropa/0.jpg"); }
+.portadaProducto__producto--objetos { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/objetos/0.jpg"); }
 
-.portadaRecuadres__producto--ropa:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/ropa/0.jpg"); }
+.portadaProducto__producto--objetos:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/objetos/0.jpg"); }
+
+.portadaProducto__producto--pines { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/pines/0.jpg"); }
+
+.portadaProducto__producto--pines:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/pines/0.jpg"); }
+
+.portadaProducto__producto--ropa { background: linear-gradient(rgba(244, 149, 66, 0), rgba(244, 149, 66, 0)), url("images/categories/ropa/0.jpg"); }
+
+.portadaProducto__producto--ropa:hover { background: linear-gradient(rgba(244, 149, 66, 0.9), rgba(244, 149, 66, 0.9)), url("images/categories/ropa/0.jpg"); }
 
 /* RESPONSIVE */
-@media only screen and (min-width: 768px) { .portadaRecuadres__superheroes--large { display: block; }
-  .portadaRecuadres__producto { width: 200px; height: 200px; margin: 20px; }
-  .portadaRecuadres__producto h4 { font-size: 26px; padding: 85px 0; }
-  .portadaRecuadres__producto--complementos h4 { font-size: 20px; } }
+@media only screen and (min-width: 768px) { .portadaSuperheroe__superheroes--large { display: block; }
+  .portadaArticles__articulo { width: calc(50% - 40px); }
+  .portadaProducto__producto { width: 200px; height: 200px; margin: 20px; }
+  .portadaProducto__producto h4 { font-size: 26px; padding: 85px 0; }
+  .portadaProducto__producto--complementos h4 { font-size: 20px; } }
 
-.contingutReviewProducte { padding: 0 20px; margin: 50px auto; width: 100%; max-width: 1200px; box-sizing: border-box; }
+@media only screen and (min-width: 1024px) { .portadaArticles__articulo { width: calc(33.33% - 40px); } }
+
+.contingutReviewProducte { padding: 0 20px; margin: 50px auto; width: 100%; max-width: 1200px; }
 
 .contingutReviewProducte h2 { margin: 0 0 30px; }
 
