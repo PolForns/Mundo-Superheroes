@@ -1,0 +1,121 @@
+.singleProduct {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.singleProduct__image {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.singleProduct__image img {
+    width: 100%;
+    height: auto;
+}
+
+.singleProduct__image--desconte {
+	background-color: #65c567;
+	height: 80px;
+	width: 80px;
+	border-radius: 40px;
+	padding: 26px 13px;
+	box-sizing: border-box;
+	font-size: 25px;
+	position: absolute;
+}
+
+.singleProduct__image a:hover {
+	color: #1e1e1e;
+}
+
+.singleProduct__info {
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.singleProduct__infoTitle {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.singleProduct__price {
+	width: 100%;
+	box-sizing: content-box;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.singleProduct__infoOfferPrice--value {
+    color: #AB1700;
+    font-weight: bold;
+}
+
+.singleProduct__infoPrimeLogo--logo {
+	background: url("https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_2x_weblab_AUI_100106_T1-4e9f4ae74b1b576e5f55de370aae7aedaedf390d._V2_.png") no-repeat;
+	display: inline-block;
+	margin: -1px 10px 0;
+	vertical-align: middle;
+	background-position: -192px -911px;
+	background-size: 560px 938px;
+	width: 52px;
+	height: 15px;
+}
+
+.singleProduct__infoListPrice {
+	margin: 0 0 5px;
+}
+
+.singleProduct__infoListPrice--value {
+	text-decoration: line-through;
+}
+
+.singleProduct__infoBuyButton {
+	position: relative;
+	width: 100%;
+	max-width: 200px;
+	border-color: #9c7e31 #90742d #786025 !important;
+	border-radius: 3px;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset;
+	background: #f0c14b;
+	background: linear-gradient(to bottom, #f7dfa5, #f0c14b) repeat scroll 0 0 rgba(0,0,0,0);
+	color: #111 !important;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 20px 0;
+	padding: 7px 12px 7px 26px;
+	border: 1px solid black;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 19px;
+	text-align: center;
+	text-decoration: none !important;
+}
+
+.singleProduct__infoBuyButton::before {
+	background-image: url(http://mundo-superheroes.com/wp-content/themes/mundo-superheroes/images/shopping-cart-solid.svg);
+	position: absolute;
+	content: '';
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-size: 14px 14px;
+	background-position: 9px center;
+}
+
+@media only screen and (max-width: 425px) {
+    .singleProduct__image {
+        width: 100%;
+    }
+
+    .singleProduct__info {
+        width: 100%;
+    }
+}

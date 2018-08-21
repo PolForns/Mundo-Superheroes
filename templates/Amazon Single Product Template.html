@@ -1,0 +1,56 @@
+<!-- Single Product Layout-->
+{{#Items}} <!--Section tag for iterating through the list of items-->
+	<div class="singleProduct">
+	  {{#Item}} <!-- Section tag for beginning of information on one item -->
+	    {{#aalb}} <!-- Section tag for picking up information on attributes for the item -->
+	    	<div class="singleProduct__image">
+	        <a href="{{DetailPageURL}}" title="{{Title}}" target="_blank" rel="nofollow"> <!--Individual attributes are provided as variable tags as {{[[attribute]]}}. Check documentation for list of supported variable tags.-->
+	          {{#SavingPercent}} <!-- The section tag ensures that percentage savings is displayed only if it is available -->
+	          <div class="singleProduct__image--desconte">
+	            <span>
+	              -{{SavingPercent}}%
+	            </span>
+	          </div>
+	          {{/SavingPercent}}
+	          <img src="{{MediumImageURL}}" srcset="{{LargeImageURL}}" alt="{{Title}}" />
+	        </a>
+	      </div>
+
+	      <div class="singleProduct__info">
+	        <div class="singleProduct__infoTitle">
+	          <a href="{{DetailPageURL}}" title="{{Title}}" target="_blank" rel="nofollow">
+	          	<h3>
+	            	{{Title}}
+	          	</h3>
+	          </a>
+	        </div>
+
+	        {{#StrikePrice}} <!-- The section tag ensures that strike price is displayed only if it is available -->
+	          <div class="singleProduct__infoListPrice">
+	            <!-- The section tag for different marketplaces ensures localization of static text.  -->
+	            {{StrikePriceLabel}}: <span class="singleProduct__infoListPrice--value">{{StrikePrice}}</span>
+	          </div>
+	        {{/StrikePrice}}
+	        <div class="singleProduct__price">
+		        <div class="singleProduct__infoOfferPrice">
+		          <!-- The section tag for different marketplaces ensures localization of static text.  -->
+		          {{PriceLabel}}: <span class="singleProduct__infoOfferPrice--value">{{CurrentPrice}}</span>
+		        </div>
+		        {{#Prime}} <!-- The section tag ensures that prime icon is displayed only if it is available -->
+		          <div class="singleProduct__infoPrimeLogo">
+		              <i class="singleProduct__infoPrimeLogo--logo"></i>
+		          </div>
+		        {{/Prime}}
+	        </div>
+
+		      <a href="{{DetailPageURL}}" title="{{Title}}" target="_blank" rel="nofollow">
+		      	<div class="singleProduct__infoBuyButton">
+		        	Comprar en Amazon
+		      	</div>
+		    	</a>
+	      </div>
+
+	    {{/aalb}}
+	  {{/Item}}
+	</div>
+{{/Items}}

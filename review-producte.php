@@ -79,7 +79,7 @@ get_header(); ?>
 		</div>
 
 		<div class="reviewOtrosProductos">
-			<h2>¡Más productos similares!</h2>
+			<h2>¡Productos similares!</h2>
 
 		</div>
 
@@ -94,7 +94,7 @@ get_header(); ?>
 			<img src="http://mundo-superheroes.com/wp-content/themes/mundo-superheroes/images/productes/casc-iron-man/casco6.jpg" alt="unboxing casco iron man">
 		</div>
 
-		<iframe src="https://www.youtube.com/embed/4vSeVFnL2Js" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<div class="reviewVideo"><iframe src="https://www.youtube.com/embed/4vSeVFnL2Js" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
 
 		<div class="reviewConclusiones">
 			<h2>Conclusion final: la mejor réplica del casco de Iron Man que puedes comprar</h2>

@@ -1,22 +1,26 @@
 .contingutReviewProducte {
-	padding: 0;
+	padding: 0 20px;
 	margin: 50px auto;
 	width: 100%;
 	max-width: 1200px;
+	box-sizing: border-box;
 
 	h2 {
 		margin: 0 0 30px;
 	}
 
 	p {
-		padding: 0 30px;
+		padding: 0 10px;
 		margin: 0;
+	}
+
+	li {
+		margin: 10px 0;
+		padding: 0 20px 0 0;
 	}
 }
 
 .reviewIntro {
-	display: flex;
-	flex-wrap: wrap;
 
 	&__info {
 		margin: 50px 0 20px;
@@ -33,15 +37,11 @@
 }
 
 .reviewCaracteristicas {
-	margin: 0 auto;
+	margin: 50px auto;
 	width: 100%;
 
 	ul {
-		padding: 0 0 0 80px;
-	}
-
-	li {
-		margin: 10px 0;
+		padding: 0 0 0 40px;
 	}
 }
 
@@ -53,26 +53,34 @@
 	margin: 50px 0 0;
 
 	ul {
-		padding: 0 0 0 50px;
+		padding: 0 0 0 40px;
 	}
 
 	li {
-		margin: 25px 0;
+		text-align: justify;
 	}
+}
+
+.reviewOtrosProductos {
+	margin: 50px 0 0;
 }
 
 .reviewImatges {
 	margin: 50px 0 0;
 
 	img {
-		width: 33%;
+		width: 50%;
 	}
+}
+
+.reviewVideo {
+	text-align: center;
 }
 
 iframe {
 	margin: 50px 0 0;
-	width: 1200px;
-	height: 675px;
+	width: calc(100% - 40px);
+	height: 239px;
 }
 
 .reviewConclusiones {
@@ -87,4 +95,7 @@ iframe {
 /* RESPONSIVE */
 @include medium {
 	@import 'medium';
+}
+@include large {
+	@import 'large';
 }

@@ -1,0 +1,236 @@
+.aalb-407-pg-ad-unit {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.aalb-407-pg-ad-unit * {
+    box-sizing: content-box;
+    box-shadow: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
+.aalb-407-pg-ad-unit.pull-left {
+    float: left;
+}
+
+.aalb-407-pg-ad-unit.pull-right {
+    float: right;
+}
+
+.aalb-407-pg-ad-unit.pull-left .aalb-407-pg-product, .aalb-407-pg-ad-unit.pull-right .aalb-407-pg-product {
+    width: 185px !important;
+}
+
+.aalb-407-pg-ad-unit a {
+    box-shadow: none !important;
+}
+
+.aalb-407-pg-ad-unit a:hover {
+    color: #c45500;
+}
+
+.aalb-407-pg-ad-unit .aalb-407-pg-ad-header {
+    padding-left: 3px;
+    padding-bottom: 9px;
+    font-size: 17px;
+    font-weight: normal;
+    color: #111111;
+}
+
+.aalb-407-pg-ad-unit .aalb-407-pg-product-list {
+    /* Remove the border-top to remove the horizontal line after the Ad Header*/
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.aalb-407-pg-product {
+    /* Make width 205px as  defined in updateLayout() function in ProductGrid.mustache and height 290px to make li as grid and contain height of stretching cell */
+    height: auto;
+    width: 220px;
+    padding: 22px 0 !important;
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+
+.aalb-407-pg-product-image {
+    display: table;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aalb-407-pg-ad-unit .aalb-407-pg-product-image img {
+    max-width: 220px;
+    max-height: 220px;
+    vertical-align: bottom;
+}
+
+@media only screen and (max-width: 1024px) {
+    .aalb-407-pg-product {
+        height: auto;
+        width: 192px;
+    }
+
+    .aalb-407-pg-product-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .aalb-407-pg-ad-unit .aalb-407-pg-product-image img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .aalb-407-pg-product {
+        height: auto;
+        width: 140px;
+    }
+
+    .aalb-407-pg-product-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .aalb-407-pg-ad-unit .aalb-407-pg-product-image img {
+        max-width: 140px;
+        max-height: 140px;
+    }
+}
+
+.aalb-407-pg-ad-unit .aalb-407-pg-product-image-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.aalb-407-pg-ad-unit .aalb-407-pg-product-image a {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.aalb-407-pg-ad-unit .aalb-407-pg-percent-off {
+    display: block;
+    width: 32px;
+    height: 27px;
+    padding-top: 5px;
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #a50200;
+    background-image: -webkit-linear-gradient(top, #cb0400, #a50200);
+    background-image: linear-gradient(to bottom, #cb0400, #a50200);
+}
+
+.aalb-407-pg-ad-unit.hide-percent-off-badge .aalb-407-pg-percent-off {
+    display: none;
+}
+
+.aalb-407-pg-product-details {
+    max-width: 205px;
+    margin: 11px 10px 0 10px;
+    text-align: left;
+}
+
+.aalb-407-pg-ad-unit .aalb-407-pg-product-title a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    color: #111111;
+    text-decoration: none;
+}
+
+.aalb-407-pg-ad-unit.no-truncate .aalb-407-pg-product-title a {
+    text-overflow: initial;
+    white-space: initial;
+}
+
+.aalb-407-pg-ad-unit .aalb-407-pg-product-offer-price {
+    font-size: 13px;
+    color: #111111;
+}
+
+.aalb-407-pg-ad-unit .aalb-407-pg-product-offer-price-value {
+    color: #AB1700;
+    font-weight: bold;
+}
+
+.aalb-407-pg-ad-unit .aalb-407-pg-product-list-price {
+    font-size: 13px;
+    color: #565656;
+}
+
+.aalb-407-pg-ad-unit .aalb-407-pg-product-list-price-value {
+    text-decoration: line-through;
+}
+
+.aalb-407-pg-ad-unit .aalb-407-pg-product-prime-icon .icon-prime-all {
+    background: url("https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_2x_weblab_AUI_100106_T1-4e9f4ae74b1b576e5f55de370aae7aedaedf390d._V2_.png") no-repeat;
+    display: inline-block;
+    margin-top: -1px;
+    vertical-align: middle;
+    background-position: -192px -911px;
+    background-size: 560px 938px;
+    width: 52px;
+    height: 15px;
+}
+
+.aalb-407-pg-ad-unit .aalb-407-pg-product-offer-price,
+.aalb-407-pg-ad-unit .aalb-407-pg-product-list-price,
+.aalb-407-pg-ad-unit .aalb-407-pg-product-prime-icon {
+    display: inline-block;
+    margin-right: 2px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .aalb-407-pg-ad-unit .aalb-407-pg-product-prime-icon .icon-prime-all {
+        background: url("https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_2x_weblab_AUI_100106_T1-4e9f4ae74b1b576e5f55de370aae7aedaedf390d._V2_.png") no-repeat;
+        display: inline-block;
+        margin-top: -1px;
+        vertical-align: middle;
+        background-position: -192px -911px;
+        background-size: 560px 938px;
+        width: 52px;
+        height: 15px;
+    }
+}
+
+/* css for mobile devices when device width is less than 441px*/
+@media  screen and (max-width: 440px) {
+    .aalb-407-pg-ad-unit {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .aalb-407-pg-product {
+        max-width: 100%;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        margin: 0 auto;
+        list-style: none;
+        float: none;
+    }
+
+    .aalb-407-pg-product-image {
+        margin: 0 auto;
+    }
+}
